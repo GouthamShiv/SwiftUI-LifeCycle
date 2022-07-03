@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct SwiftUI_LifeCycleApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @Environment(\.scenePhase) var scenePhase
     var body: some Scene {
         WindowGroup {
